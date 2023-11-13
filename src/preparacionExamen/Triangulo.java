@@ -33,7 +33,8 @@ public class Triangulo {
 			System.out.println();
 		}
 	}
-	
+
+	/*
 	public static void Paola(int filas) {
 		int n = filas;
 		// creamos las filas
@@ -46,9 +47,9 @@ public class Triangulo {
 			}
 			System.out.println("");
 		}
-	}
+	}*/
 	
 	public static void main(String[] args) {
-		Paola(5);
+		piramideInvertida(5);
 	}
 }
