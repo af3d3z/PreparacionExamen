@@ -36,6 +36,6 @@ public class Cuadrado {
 	
 	
 	public static void main(String[] args) {
-		imprimirCuadrado(9);
+		imprimirCuadradoPirata(10);
 	}
 }

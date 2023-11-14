@@ -1,7 +1,7 @@
 package preparacionExamen;
 
 public class Triangulo {
-	public static void imprimirPiramide(int filas) {
+	public static void trianguloIsosceles(int filas) {
 		int num = filas;
 		
 		for(int i = 1; i <= filas; i++) {
@@ -34,6 +34,22 @@ public class Triangulo {
 		}
 	}
 
+	public static void piramide(int alto) {
+		int num = alto;
+
+		for(int fila = 1; fila <= alto; fila++){
+			for(int columna = 1; columna <= alto; columna++){
+				if(columna >= num){
+					System.out.print("* ");
+				}else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+			num--;
+		}
+	}
+
 	/*
 	public static void Paola(int filas) {
 		int n = filas;
@@ -50,6 +66,7 @@ public class Triangulo {
 	}*/
 	
 	public static void main(String[] args) {
-		imprimirPiramide(5);
+		piramide(6);
+		piramideInvertida(6);
 	}
 }
