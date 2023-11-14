@@ -4,12 +4,12 @@ public class Triangulo {
 	public static void imprimirPiramide(int filas) {
 		int num = filas;
 		
-		for(int i = 0; i <= filas; i++) {
-			for(int j = 0; j <= filas; j++) {
-				if(j >= num) {
+		for(int i = 1; i <= filas; i++) {
+			for(int j = 1; j <= filas; j++) {
+				if(j == num|| j == filas || i == filas) {
 					System.out.print("* ");
 				}else {
-					System.out.print(" ");
+					System.out.print("  ");
 				}
 			}
 			num--;
@@ -50,6 +50,6 @@ public class Triangulo {
 	}*/
 	
 	public static void main(String[] args) {
-		piramideInvertida(5);
+		imprimirPiramide(5);
 	}
 }
